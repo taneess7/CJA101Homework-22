@@ -209,6 +209,17 @@ public class Hw4 {
     	return max;
     	
     }
+	public static double findMax(double[] array){
+	    	
+		    double max = array[0];
+	    	for (double num:array) {
+	    		if (num > max) {
+	                max = num;
+	            }
+	    	}
+	    	return max;
+	    	
+	    }
 	// 判斷是否為閏年（閏年條件：可被 4 整除且不可被 100 整除，或可被 400 整除）
     public static boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
